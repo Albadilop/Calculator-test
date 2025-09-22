@@ -1,0 +1,41 @@
+.calculator-body {
+  width: 240px;
+  height: 370px;
+  background-color: rgb(27, 26, 26);
+}
+
+.calculator-buttons {
+  background-color: rgb(54, 54, 54);
+  color: white;
+  width: 45px;
+  height: 45px;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  border: none; 
+  border-radius: 1rem;
+  font-size: 20px;
+}
+
+.calculator-screen {
+  height: 70px;
+  margin-bottom: 10px;
+  background-color: black;
+}
+
+.calculator-button-longer {
+  width: 90px;
+}
+
+.calculator-result{
+    margin-right: 4%;
+    margin-top: 1%;
+    font-size: 45px;
+}
+
+.equal-button{
+    background-color: rgb(255, 116, 3);
+}
+
+.other-buttons{
+    background-color: rgb(133, 133, 133);
+}
