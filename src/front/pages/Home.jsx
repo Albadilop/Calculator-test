@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import rigoImageUrl from "../assets/img/rigo-baby.jpg";
 import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
-import { CalculatorFrame } from "../components/CalculatorFrame.jsx";
+import { Calculator } from "../components/Calculator.jsx";
 
 export const Home = () => {
 
@@ -36,7 +36,7 @@ export const Home = () => {
 	return (
 		<div>
 			<div class="container d-flex justify-content-center align-items-center">
-				<CalculatorFrame />
+				<Calculator />
 
 			</div>
 

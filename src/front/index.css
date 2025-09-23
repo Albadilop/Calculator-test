@@ -18,6 +18,7 @@
 
 .calculator-screen {
   height: 70px;
+  width: 1%;
   margin-bottom: 10px;
   background-color: black;
 }
