@@ -5,15 +5,17 @@ export const CalculatorFrame = () => {
             <div class="card-body">
                 <div class="card border-0 rounded-4 calculator-screen">
                     <div className="d-flex justify-content-end ">
-                    <h1 className="calculator-result text-white">453450</h1>
+                        <h1 className="calculator-result text-white">453450</h1>
                     </div>
-            
+
                 </div>
                 {/* Buttons */}
 
                 <div className="d-flex justify-content-between">
-                    <button type="button" class="btn calculator-buttons other-buttons">C</button>
-                    <button type="button" class="btn calculator-buttons other-buttons">+</button>
+                    <button type="button" class="btn calculator-buttons other-buttons">A</button>
+                    {/* <button type="button" class="btn calculator-buttons other-buttons">
+                        <i className="fa-solid fa-delete-left"></i></button> */}
+                    <button type="button" class="btn calculator-buttons other-buttons">-</button>
                     <button type="button" class="btn calculator-buttons other-buttons">%</button>
                     <button type="button" class="btn calculator-buttons other-buttons">/</button>
                 </div>
@@ -37,7 +39,8 @@ export const CalculatorFrame = () => {
                 </div>
 
                 <div className="d-flex justify-content-between">
-                    <button type="button" class="btn calculator-buttons calculator-button-longer">0</button>
+                    <button type="button" class="btn calculator-buttons"><i class="fa-solid fa-calculator"></i></button>
+                    <button type="button" class="btn calculator-buttons">0</button>
                     <button type="button" class="btn calculator-buttons">.</button>
                     <button type="button" class="btn calculator-buttons equal-button">=</button>
                 </div>
