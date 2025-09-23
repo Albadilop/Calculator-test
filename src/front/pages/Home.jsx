@@ -35,7 +35,7 @@ export const Home = () => {
 
 	return (
 		<div>
-			<div class="container">
+			<div class="container d-flex justify-content-center align-items-center">
 				<CalculatorFrame />
 
 			</div>
