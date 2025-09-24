@@ -31,8 +31,8 @@ const handleCalculate = () => {
         <div class="card border-0 rounded-4 calculator-body">
             <div class="card-body">
                 <div class="card border-0 rounded-4 calculator-screen">
-                    <div className="d-flex">
-                        <h1 className="calculator-result text-white">{input}</h1>
+                    <div>
+                        <h1 className="calculator-result">{input}</h1>
                     </div>
 
                 </div>
