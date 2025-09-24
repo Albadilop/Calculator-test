@@ -13,7 +13,10 @@
   margin-bottom: 1.5%;
   border: none;
   border-radius: 1rem;
-  font-size: 20px;
+  font-size: 22px;
+  display: flex;  
+  justify-content: center; 
+  align-items: center;
 }
 .calculator-buttons:hover{
   background-color: rgb(87, 87, 87);
@@ -22,7 +25,9 @@
 
 .calculator-screen {
   display: flex;
-  align-items: end; 
+  flex-direction: column;  /* Cambia la dirección de los elementos a columna */
+  justify-content: flex-end;  /* Alinea el contenido al final (abajo) */
+  align-items: flex-end;  /* Alinea el contenido al borde derecho */
   height: 70px;
   width: 100%; 
   margin-bottom: 10px;
@@ -31,24 +36,30 @@
 }
 
 .calculator-result {
+  text-align: right;  /* Alinea el texto a la derecha */
   width: 100%;
-  font-size: 45px;
+  font-size: 40px;
   color: white;
-  
+
 }
 
 .equal-button {
   background-color: rgb(255, 116, 3);
+  font-size: 22px;
+ 
 }
 
 .equal-button:hover {
   background-color: rgb(255, 153, 69);
   color: white;
+
 }
 
 
 .other-buttons {
   background-color: rgb(133, 133, 133);
+  font-size: 20px;
+  font-weight:600 ;
   
 }
 .other-buttons:hover {
