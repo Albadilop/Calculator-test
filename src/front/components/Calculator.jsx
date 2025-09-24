@@ -11,6 +11,7 @@ export const Calculator = () => {
 
     const handleClear = () => {
         setInput('');
+        
     };
 
     const handleDelete = () => {
@@ -68,7 +69,7 @@ const handleCalculate = () => {
                 </div>
 
                 <div className="d-flex justify-content-between">
-                    <button onClick={() => handleClick('-')} type="button" class="btn calculator-buttons"><i class="fa-solid fa-calculator"></i></button>
+                    <button onClick={() => handleClick('')} type="button" class="btn calculator-buttons"><i class="fa-solid fa-calculator"></i></button>
                     <button onClick={() => handleClick('0')} type="button" class="btn calculator-buttons">0</button>
                     <button onClick={() => handleClick('.')} type="button" class="btn calculator-buttons">.</button>
                     <button onClick={handleCalculate} type="button" class="btn calculator-buttons equal-button">=</button>

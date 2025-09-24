@@ -15,6 +15,10 @@
   border-radius: 1rem;
   font-size: 20px;
 }
+.calculator-buttons:hover{
+  background-color: rgb(87, 87, 87);
+  color: white;
+}
 
 .calculator-screen {
   display: flex;
@@ -26,22 +30,30 @@
   padding-right: 10px; 
 }
 
-.calculator-button-longer {
-  width: 90px;
-}
-
 .calculator-result {
   width: 100%;
   font-size: 45px;
   color: white;
+  
 }
 
 .equal-button {
   background-color: rgb(255, 116, 3);
 }
 
+.equal-button:hover {
+  background-color: rgb(255, 153, 69);
+  color: white;
+}
+
+
 .other-buttons {
   background-color: rgb(133, 133, 133);
+  
+}
+.other-buttons:hover {
+  background-color: rgb(187, 187, 187);
+  color: white;
 }
 
 .history-button-icon {
