@@ -42,8 +42,32 @@ export const Calculator = () => {
         }
     };
 
+    const handleMultiplication = () => {
+        if (!input.includes('*')) {
+            setInput(prevInput => prevInput + '*');
+        }
+    };
+
+    const handleMinus = () => {
+        if (!input.includes('-')) {
+            setInput(prevInput => prevInput + '-');
+        }
+    };
+
+    const handleAdd = () => {
+        if (!input.includes('+')) {
+            setInput(prevInput => prevInput + '+');
+        }
+    };
+
+    const handleDivision = () => {
+        if (!input.includes('/')) {
+            setInput(prevInput => prevInput + '/');
+        }
+    };
+
     return (
-        <div class="card border-0 rounded-4 calculator-body">
+        <div class="card border-0 rounded-4 mt-5 calculator-body">
             <div class="card-body">
                 <div class="card border-0 rounded-4 calculator-screen">
                     <div>
@@ -59,27 +83,27 @@ export const Calculator = () => {
                         <button onClick={handleDelete} type="button" class="btn calculator-buttons other-buttons">
                             <i className="fa-solid fa-delete-left"></i></button>
                     )}
-                    <button onClick={() => handleClick('-')} type="button" class="btn calculator-buttons other-buttons"><i class="fa-solid fa-plus-minus"></i></button>
+                    <button type="button" class="btn calculator-buttons other-buttons"><i class="fa-solid fa-plus-minus"></i></button>
                     <button onClick={() => handleClick('%')} type="button" class="btn calculator-buttons other-buttons"><i class="fa-solid fa-percent"></i></button>
-                    <button onClick={() => handleClick('/')} type="button" class="btn calculator-buttons other-buttons"><i class="fa-solid fa-divide"></i></button>
+                    <button onClick={handleDivision} type="button" class="btn calculator-buttons other-buttons"><i class="fa-solid fa-divide"></i></button>
                 </div>
                 <div className="d-flex justify-content-between">
                     <button onClick={() => handleClick('7')} type="button" class="btn calculator-buttons">7</button>
                     <button onClick={() => handleClick('8')} type="button" class="btn calculator-buttons">8</button>
                     <button onClick={() => handleClick('9')} type="button" class="btn calculator-buttons">9</button>
-                    <button onClick={() => handleClick('X')} type="button" class="btn calculator-buttons other-buttons"><i class="fa-solid fa-xmark"></i></button>
+                    <button onClick={handleMultiplication} type="button" class="btn calculator-buttons other-buttons"><i class="fa-solid fa-xmark"></i></button>
                 </div>
                 <div className="d-flex justify-content-between">
                     <button onClick={() => handleClick('4')} type="button" class="btn calculator-buttons">4</button>
                     <button onClick={() => handleClick('5')} type="button" class="btn calculator-buttons">5</button>
                     <button onClick={() => handleClick('6')} type="button" class="btn calculator-buttons">6</button>
-                    <button onClick={() => handleClick('-')} type="button" class="btn calculator-buttons other-buttons"><i class="fa-solid fa-minus"></i></button>
+                    <button onClick={handleMinus} type="button" class="btn calculator-buttons other-buttons"><i class="fa-solid fa-minus"></i></button>
                 </div>
                 <div className="d-flex justify-content-between">
                     <button onClick={() => handleClick('1')} type="button" class="btn calculator-buttons">1</button>
                     <button onClick={() => handleClick('2')} type="button" class="btn calculator-buttons">2</button>
                     <button onClick={() => handleClick('3')} type="button" class="btn calculator-buttons">3</button>
-                    <button onClick={() => handleClick('+')} type="button" class="btn calculator-buttons other-buttons"><i class="fa-solid fa-plus"></i></button>
+                    <button onClick={handleAdd} type="button" class="btn calculator-buttons other-buttons"><i class="fa-solid fa-plus"></i></button>
                 </div>
 
                 <div className="d-flex justify-content-between">
